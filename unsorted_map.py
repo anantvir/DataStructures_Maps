@@ -30,8 +30,7 @@ class UnsortedTableMap(MapBase):        # Map using unsorted list without any ha
         for item in self._table:
             if item._key == k:
                 item._value = v
-                return
-        
+                return      
         self._table.append(self._Item(k,v))     # Will execute this only if item is not found in the for loop above
     
     def __delitem__(self,k):

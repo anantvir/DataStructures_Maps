@@ -41,7 +41,7 @@ class SimpleMap(MutableMapping):
         pass
 
 class HashMap(SimpleMap):
-    def __init__(self,init_cap = 11,prm = 10051949):
+    def __init__(self,init_cap = 11,prm = 99999999769):
         self._table = [None] * init_cap
         self._size = 0
         self._a = 1 + random.randrange(prm - 1)
